@@ -1,0 +1,148 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,200&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.App {
+  font-family: "Poppins", sans-serif;
+}
+
+/* start header */
+.banner-img {
+  background: url("../img/Header3.jpg");
+  background-size: cover;
+  max-width: 100%;
+  height: 600px;
+}
+
+.nav-image {
+  background: url("../img/Header3.jpg");
+  background-size: cover;
+  max-width: 100%;
+  height: 150px;
+}
+
+.header-title {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #fff;
+  margin: 10rem;
+}
+
+.header-btn {
+  margin-top: 5rem;
+}
+
+.btn {
+  margin: 1rem 1rem;
+  border-radius: 30px 30px 30px 30px;
+}
+/* end header */
+
+/* start loader */
+.loader {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  z-index: 9999;
+  background: white;
+}
+.indicator {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(4);
+  -ms-transform: translate(-50%, -50%) scale(4);
+  transform: translate(-50%, -50%) scale(4);
+}
+.indicator svg polyline {
+  fill: none;
+  stroke-width: 0.5;
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.indicator svg polyline#back {
+  stroke: rgba(57, 197, 222, 0.3);
+}
+.indicator svg polyline#front {
+  stroke: #39c5de;
+  stroke-dasharray: 12, 36;
+  stroke-dashoffset: 48;
+  -webkit-animation: dash 1s linear infinite;
+  animation: dash 1s linear infinite;
+}
+.cta {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  color: #222;
+  font-weight: bold;
+}
+@-webkit-keyframes dash {
+  62.5% {
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash {
+  62.5% {
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+/* end loader */
+
+/* start card */
+.recent-card {
+  margin: 1rem;
+}
+/* end card */
+
+/* start why us */
+.why-us {
+  color: #0ba4cd;
+}
+
+.why-us li {
+  color: #0ba4cd;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+ol.why-list {
+  list-style-type: disc;
+}
+/* end why us */
+
+/* start download */
+.download {
+  color: #0ba4cd;
+  margin-top: 8rem;
+}
+
+.soon {
+  width: 100%;
+}
+/* end download */
+
+/* start services */
+.service {
+  margin-top: 10rem;
+}
+
+.service-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.service img {
+  width: 100%;
+}
