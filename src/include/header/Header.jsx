@@ -19,10 +19,10 @@ export default function Header() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/products">About Us</Link>
+                <Link to="/about">About Us</Link>
               </li>
               <li>
-                <Link to="/contact">Services</Link>
+                <Link to="/service">Services</Link>
               </li>
               <li>
                 <Link to="/about">Blogs</Link>
@@ -37,19 +37,19 @@ export default function Header() {
           </div>
         </nav>
         <div className="header-title">
-          <h3>Welcome to our resturant</h3>
+          <h3>የጤንነትዎ ዋስትና በጤናዎ !!</h3>
           <div className="header-btn">
             <Link
               to="/products"
               className="btn btn-large waves-effect waves-light blue bttn"
             >
-              <i class="material-icons right">login</i>Login
+              <i className="material-icons right">login</i>Login
             </Link>
             <Link
               to="/products"
               className="btn btn-large waves-effect waves-light red bttn"
             >
-              <i class="material-icons right">app_registration</i>Register
+              <i className="material-icons right">app_registration</i>Register
             </Link>
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function Header() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/products">About Us</Link>
+          <Link to="/about">About Us</Link>
         </li>
         <li>
           <Link to="/contact">Services</Link>

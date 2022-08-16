@@ -1,9 +1,20 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,200&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css");
+
+.body {
+  margin: 0;
+  padding: 0;
+}
 
 .App {
   font-family: "Poppins", sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 /* start header */
@@ -108,6 +119,9 @@
 /* start why us */
 .why-us {
   color: #0ba4cd;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 .why-us li {
@@ -145,4 +159,220 @@ ol.why-list {
 
 .service img {
   width: 100%;
+  /* margin-top: 5rem; */
 }
+
+.item {
+  text-align: center;
+}
+
+.item span {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.item h5 {
+  color: #0ba4cd;
+}
+
+.btn3 {
+  display: grid;
+  row-gap: 2rem;
+}
+/* end service */
+
+/* start parallex */
+
+.parallax-container {
+  height: 20rem;
+}
+
+.counter {
+  margin: auto;
+}
+
+.counter h5,
+.counter h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* end parallex */
+
+/* start testmonial */
+.testmonial {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.testmonial h5 {
+  font-size: 1.3rem;
+  color: #0ba4cd;
+}
+
+.desc p {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.carousel img {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+}
+/* end testmonial */
+
+/* start partner */
+.partners {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.box {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: auto;
+  transition: transform 0.5s ease-in;
+  margin: 1rem;
+}
+/* end partner */
+
+/* start contact */
+.contact {
+  margin-top: 5rem;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact p {
+  color: #0ba4cd;
+}
+
+.contact h3 {
+  color: #0ba4cd;
+}
+
+.contact p > span {
+  font-size: 1.4rem;
+  padding-right: 0.5rem;
+  font-weight: bolder;
+}
+
+.contact button {
+  width: 90%;
+}
+
+/* end contact */
+
+/* start map */
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 600px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 600px;
+}
+/* end map */
+
+/* start footer */
+.link a {
+  padding-left: 12px;
+}
+/* end footer */
+
+/* start about */
+.about {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.kmslogo {
+  display: grid;
+  align-items: center;
+  justify-content: left;
+  margin-top: 3rem;
+}
+
+.kmslogo img {
+  width: 30rem;
+}
+
+.sub-about {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.sub-title {
+  color: #0ba4cd;
+  font-size: 25px;
+  font-weight: bold;
+  border-bottom: 1px solid #0ba4cd;
+}
+
+.mission,
+.core,
+.why {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: grid;
+  align-items: center;
+  justify-content: left;
+}
+
+.list {
+  list-style-type: disc;
+}
+
+/* end about */
+
+/* start detail service */
+.detail {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.card h5 {
+  padding: 10px 0;
+}
+
+.card {
+  transition: 0.5s;
+  background: #eee;
+}
+
+.card:hover i,
+h5 {
+  color: #0ba4cd;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  background: #fff;
+}
+/* end detail service */
+
+/* start mobile design */
+
+@media only screen and (max-width: 720px) {
+  .service img {
+    margin: auto;
+  }
+
+  .parallax-container {
+    height: auto;
+  }
+}
+/* end mobile design */
